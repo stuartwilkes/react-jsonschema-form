@@ -1,7 +1,7 @@
 {
   "name": "react-jsonschema-form",
   "version": "2.0.0-alpha.1",
-  "private": true,
+  "private": false,
   "description": "monorepo for react-jsonschema-form and its themes",
   "scripts": {
     "postinstall": "lerna bootstrap",
@@ -35,5 +35,17 @@
     "hooks": {
       "pre-commit": "lerna run --concurrency 1 --stream precommit"
     }
+  },
+  "main": "babel.config.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stuartwilkes/react-jsonschema-form.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/stuartwilkes/react-jsonschema-form/issues"
   }
 }
